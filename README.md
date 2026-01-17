@@ -1,88 +1,54 @@
 
 # Yellow.ai Backend Assignment
 
-This project is a backend application developed as part of the Yellow.ai Software Engineer Intern assignment.
-
-The application exposes a simple HTTP server and a chatbot API to confirm that the backend service is running successfully.
-
----
+## Description
+This project is a simple backend application built using Node.js and Express.
+It demonstrates how to create a basic server and expose an API endpoint.
 
 ## Tech Stack
 - Node.js
 - Express.js
 
----
-
-## Project Structure
-- server.js : Main server file
-- package.json : Project dependencies and scripts
-- README.md : Project documentation
-
----
-
-## How to Run the Project Locally
-
-1. Clone the repository:
-   git clone https://github.com/Ishwari-gowda/yellow-ai-backend-assignment.git
-
-2. Navigate to the project directory:
+## Setup Instructions
+1. Install Node.js (v16 or above)
+2. Navigate to the project folder:
    cd yellow-ai-assignment
-
-3. Install dependencies:
+3. Install dependencies using:
    npm install
 
-4. Start the server:
+## How to Run
+Run the following command:
    node server.js
+The server starts on port 3000.
 
-5. Server will run at:
-   http://localhost:3000
+## API Endpoint
+- GET /
+  - Returns a message indicating the server is running.
 
----
+- POST /chat
+  - Example Request Body:
+    {
+      "message": "hi"
+    }
+  - Example Response:
+    {
+      "reply": "Hello! I am the Yellow.ai demo chatbot. How can I help you?"
+    }
 
 ## Hosted Demo URL
-
 The application is deployed on Render (Free Tier):
+<PASTE YOUR RENDER LIVE URL HERE>
 
-https://yellow-ai-backend-assignment.onrender.com
-
-Note: Free tier may have a cold-start delay of 30–50 seconds.
-
----
+Note: Free tier may have cold-start delay of 30–50 seconds.
 
 ## Architecture / Design Explanation
+- The project uses Node.js with Express.js
+- A simple server exposes HTTP endpoints
+- POST /chat implements a basic keyword-based intent detection for the chatbot
+- Lightweight, easy to understand, easy to deploy
 
-The backend is built using Express.js.
-It exposes REST APIs and processes chatbot messages using simple keyword-based intent detection.
-The architecture is lightweight, modular, and easy to deploy on cloud platforms.
-
----
-
-## Chatbot Design
-
-This project implements a basic intent-based chatbot backend.
-
-### Supported Intents
-- Greeting (hi, hello)
-- Pricing queries (price, cost)
-- Support queries (help, support)
-- Goodbye (bye)
-
-### API Endpoint
-
-POST /chat
-
-Request Body:
-{
-  "message": "hi"
-}
-
-Response:
-{
-  "reply": "Hello! I am the Yellow.ai demo chatbot. How can I help you?"
-}
-## Architecture / Design Explanation
-
-The application is built using Node.js and Express.js.
-It follows a simple architecture where an Express server listens for HTTP requests.
-A basic API endpoint is exposed to verify that the backend service is running.
-This design keeps the application lightweight, easy to understand, and easy to deploy.
+## Demo
+- Demo video shows:
+  - GitHub repository
+  - Live deployed URL
+  - Server response in browser
