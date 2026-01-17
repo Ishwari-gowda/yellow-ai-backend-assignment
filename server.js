@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express = require("express");
 const app = express();
 
@@ -52,5 +52,3 @@ app.get("/", (req, res) => {
 
 app.listen(PORT, () => {
   console.log("SERVER.JS FILE IS RUNNING ON PORT 3000");
->>>>>>> f7abd9bcce035357106e56cfc32da444c7d04959
-});
