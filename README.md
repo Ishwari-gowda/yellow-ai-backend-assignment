@@ -36,7 +36,7 @@ The application exposes a simple HTTP server that responds with a message to con
 5. The server will run on:
    http://localhost:3000
 
----
+--
 
 ## Hosted Demo URL
 
@@ -62,3 +62,28 @@ A short demo video is included to show:
 - GitHub repository
 - Live deployed URL
 - Server response in browser
+## Chatbot Design
+
+This project implements an intent-based chatbot backend using Node.js and Express.
+
+The chatbot detects user intent using simple keyword matching and responds accordingly.
+
+### Supported Intents
+- Greeting (hi, hello)
+- Pricing queries (price, cost)
+- Support queries (help, support)
+- Goodbye (bye)
+
+### API Endpoint
+
+POST /chat
+
+Request Body:
+{
+  "message": "hi"
+}
+
+Response:
+{
+  "reply": "Hello! I am the Yellow.ai demo chatbot. How can I help you?"
+}
