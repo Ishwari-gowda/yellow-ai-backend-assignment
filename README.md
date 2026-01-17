@@ -1,8 +1,9 @@
+
 # Yellow.ai Backend Assignment
 
 This project is a backend application developed as part of the Yellow.ai Software Engineer Intern assignment.
 
-The application exposes a simple HTTP server that responds with a message to confirm that the backend service is running successfully.
+The application exposes a simple HTTP server and a chatbot API to confirm that the backend service is running successfully.
 
 ---
 
@@ -22,7 +23,7 @@ The application exposes a simple HTTP server that responds with a message to con
 ## How to Run the Project Locally
 
 1. Clone the repository:
-   git clone <repository-url>
+   git clone https://github.com/Ishwari-gowda/yellow-ai-backend-assignment.git
 
 2. Navigate to the project directory:
    cd yellow-ai-assignment
@@ -33,40 +34,32 @@ The application exposes a simple HTTP server that responds with a message to con
 4. Start the server:
    node server.js
 
-5. The server will run on:
+5. Server will run at:
    http://localhost:3000
 
---
+---
 
 ## Hosted Demo URL
 
 The application is deployed on Render (Free Tier):
 
-<PASTE YOUR RENDER LIVE URL HERE>
+https://yellow-ai-backend-assignment.onrender.com
 
-Note: The free tier may have a cold-start delay of up to 30–50 seconds.
+Note: Free tier may have a cold-start delay of 30–50 seconds.
 
 ---
 
 ## Architecture / Design Explanation
 
-The application uses a simple Express.js server that listens for incoming HTTP requests.
-A single route is exposed to return a response confirming that the backend is running.
-This design keeps the application lightweight, easy to understand, and easy to deploy.
+The backend is built using Express.js.
+It exposes REST APIs and processes chatbot messages using simple keyword-based intent detection.
+The architecture is lightweight, modular, and easy to deploy on cloud platforms.
 
 ---
 
- ## Demo
-
-A short demo video is included to show:
-- GitHub repository
-- Live deployed URL
-- Server response in browser
 ## Chatbot Design
 
-This project implements an intent-based chatbot backend using Node.js and Express.
-
-The chatbot detects user intent using simple keyword matching and responds accordingly.
+This project implements a basic intent-based chatbot backend.
 
 ### Supported Intents
 - Greeting (hi, hello)
