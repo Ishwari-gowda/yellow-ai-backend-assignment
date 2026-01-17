@@ -80,3 +80,9 @@ Response:
 {
   "reply": "Hello! I am the Yellow.ai demo chatbot. How can I help you?"
 }
+## Architecture / Design Explanation
+
+The application is built using Node.js and Express.js.
+It follows a simple architecture where an Express server listens for HTTP requests.
+A basic API endpoint is exposed to verify that the backend service is running.
+This design keeps the application lightweight, easy to understand, and easy to deploy.
